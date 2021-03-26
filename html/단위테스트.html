@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      html {
+        font-size: 16px; /* 폰트 크기를 의미한다 */
+        font-weight: bold; /*글자의 굴기를 정한다 참고 - https://www.codingfactory.net/10553 */
+      }
+      span.em {
+        /*span태그에 class 속성으로 em이 들어가 있는경우*/
+        font-size: 2em;
+      }
+      span.rem {
+        /*span 태그에 class 속서으로 rem 이 들어가 있는 경우*/
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    기본 사이즈
+    <span class="em">
+      <span class="em">중첩1<span class="em">중첩2</span></span> <!--중첩1은
+      기본사이즈의 4개바 커지고 중첩2는 중첩1의 두배가 커진다 -->
+    </span>
+    <br />
+    기본 사이즈
+    <span class="rem">
+      <span class="rem">중첩1<span class="rem">중첩2</span></span>
+    </span>
+  </body>
+</html>
