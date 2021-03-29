@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        인접 형제 셀렉터 
+        h1태그 뒤에 바로 h2 태그가 위치해야 한다
+        또한 두개의 태그는 같은 레벨이여야 한다*/
+        h1 + h2 {
+            color: purple;
+        }
+
+        /*일반 형제 셀렉터 
+        h1 태그와 동일 레벨에 p 태그가 위치하고 있다
+        그러넫 두 태그 사이에 h2 태그가 있다
+        이런 경우에도 p태그에 style 이 적용된다*/
+        h1 ~ p {
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Meeyoung Choi</h1>
+        <h2>코딩 블로그</h2>
+        <p>코딩 블로그를 운영하고 있습니다.</p>    
+        <p><span>좋은 컨텐츠와 친절한 설명으로 다가가겠습니다.</span></p>
+    </div>
+
+
+
+
+</body>
+</html>

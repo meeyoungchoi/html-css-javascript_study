@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*div 태그 밑에 있는 p 태그중 첫번쨰 p태그를 의미한다*/
+        p:first-child {
+            color: blue;
+        }
+
+        p:last-child {
+            color: red;
+        }
+
+        p:nth-child(2) {
+            color: green;
+        }
+
+        p:nth-child(3) {
+            color: brown;
+        }
+
+       
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div>
+        <h1>Meeyoung Choi</h1>
+        <h2>재미있는 css</h2>
+        <div>
+            <p>코딩 블로그를 운영하고 있습니다.</p>
+            <p><span>좋은 컨텐츠와 도움이 될수 있는 내용으로</span>도움을 드리겠습니다.</p>
+
+            <p>
+                새로운 기술을 익힐 때는, 아주 쉬운 부분부터 집중해서 익숙해지도록!
+            </p>
+            <p>세세한 부분은 신경도 쓰지 말도록!</p>
+            <p>문제는 이슈가 있으면, 여러가지 테스트해보고!</p>
+            <p>문제는 이슈가 있으면, 여러가지 테스트해보고!</p>
+
+        </div>
+
+        <div>
+            <!--first-child 이긴 하지만 p태그가 아니기 때문에 빨간색으로 표시되지 않는다 -->
+            <h2>first-child/last-child가 여기는 왜 안될까요?</h2>
+            <p>잔재미코딩을 운영하고 있습니다. 현업 기획자 및 개발자입니다.</p>
+            <p>
+              <span>좋은 컨텐츠와 서비스</span>를 만드는 일에 집중하고 있습니다.
+            </p>
+            <p>
+              새로운 기술을 익힐 때는, 아주 쉬운 부분부터 집중해서 익숙해지도록!
+            </p>
+            <p>세세한 부분은 신경도 쓰지 말도록!</p>
+            <p>문제는 이슈가 있으면, 여러가지 테스트해보고!</p>
+            <p>문제는 이슈가 있으면, 여러가지 테스트해보고!</p>
+            <!--last-child이긴 하지만 p태그가 아니기 때문에 style이 적용되지 않았다-->
+            <h2>first-child/last-child가 여기는 왜 안될까요?</h2>
+          </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

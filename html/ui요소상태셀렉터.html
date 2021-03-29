@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*체크박스를 한번도 선택한 적이 없는 상태*/
+        input[type="radio"]:indeterminate + span {
+            color: green;
+        }
+
+        input[type="radio"]:checked + span {
+            color: hotpink;
+        }
+
+        /*체크박스가 체크할수 있게 활성화 되어있을때*/
+        input[type="checkbox"]:enabled + span {
+            color: indigo;
+        }
+
+
+        /*체크박스가 체크할수 없게 되어있을때*/
+        input[type="checkbox"]:disabled + span {
+            color: green;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Meeyoung Choi</h1>
+    <a href="blog.naver.com/tkgksw">코딩 블로그</a>
+    <form>
+        <input type="radio" value="item1" name="item"/><span>item1</span><br/>
+        <input type="radio" value="item2" name="item"/><span>item2</span><br/>
+
+        <input type="checkbox" value="check1" name="check"/><span>checked1</span><br/>
+        <input type="checkbox" value="check2" name="check"/><span>checked2</span><br/>
+
+
+        <input type="text" id="data" name="data"/><br/>
+        <input type="submit" value="확인"/> 
+
+
+    </form>
+
+
+
+</body>
+</html>
