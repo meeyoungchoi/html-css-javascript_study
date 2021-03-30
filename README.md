@@ -24,3 +24,10 @@
 + 가상 클래스 셀렉터
 + UI 요소 상태 셀렉터
 + 부정 셀렉터
+
+## 0330 정리
++ boxmodel - margin , padding
++ boxmodel - boxsizing
++ boxmodel - border
++ boxmodel - maxwidth
++ backgroundimage
