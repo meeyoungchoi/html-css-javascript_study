@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- div 태그는 block 요소를 갖는 태그이다-->
+    <!--block 태그 안에는 inline 태그가 포함될수 있다-->
+    <div style="background-color: red; width: 500px;">
+        블록 <span>레벨</span> 요소
+    </div>
+    <br/>
+
+    <span style="background-color: rebeccapurple; width: 200px;">
+        블록 
+        <div>레벨 </div>
+        요소
+    </span>
+
+    <!--inline 태그안에는 block 태그가 포함될수 없다-->
+    <span style="background-color: salmon; width: 200px; display: block;">
+        <div>레벨</div>
+        <span>레벨</span>
+        요소
+    </span>
+
+</body>
+</html>

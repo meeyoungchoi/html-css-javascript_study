@@ -31,3 +31,8 @@
 + boxmodel - border
 + boxmodel - maxwidth
 + backgroundimage
+
+## 0401 정리
++ position - relative , absolute , fixed
++ animation - animation-name , animatino-duration , animation-fill-mode , animation-iteration-count 
++ transition - transition-timing-function , transition-duration

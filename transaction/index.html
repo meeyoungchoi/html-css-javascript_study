@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                border: 2px solid #f2b441;
+                border-radius: 10px;
+                transition-property: width;
+                transition-duration: 5s;
+            }
+
+            div:hover {
+                width: 100%;
+            }
+
+            .box1 {
+                background-color: #f2d541;
+                transition-timing-function: ease;
+            }
+
+            .box2 {
+                background: #5fb6d9;
+                transition-timing-function: linear;
+            }
+
+            .box3 {
+                background: #3b9cd9;
+                transition-timing-function: ease-in-out;
+            }
+
+            .box4 {
+                background-color: #3b9cd9;
+                transition-timing-function: ease-in-out;
+            }
+
+            .box5 {
+                background: #3b9cd9;
+                transition-timing-function: step-start;
+            }
+
+            .box6 {
+                background: #3b9cd9;
+                transition-timing-function: step-end;
+            }
+
+
+            .box7 {
+                background: #3b9cd9;
+                transition-timing-function: steps(4 , start);
+            }
+
+            .box8 {
+                background-color: #3b9cd9;
+                transition-timing-function: steps(2 , start);
+            }
+
+            .box9 {
+                background-color: #3b9cd9;
+                transition-timing-function: steps(4 , end);
+            }
+
+
+            /*참고 - https://www.codingfactory.net/10953*/
+
+        </style>
+    </head>
+    <body>
+        <div class="box1">ease</div>
+        <div class="box2">linear</div>
+        <div class="box3">ease-in</div>
+        <div class="box4">
+            ease-in-out</div>
+        <div class="box5">step-start</div>
+        <div class="box6">step-end</div>
+        <div class="box7">steps(4 , start)</div> <!-- n단계로 나눠 실행시킨다-->
+        <div class="box8">steps(2 , start)</div>
+        <div class="box9">steps(4 , end)</div>    
+    </body>
+</html>

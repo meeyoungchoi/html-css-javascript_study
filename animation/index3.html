@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #f2b441;
+            background: red;
+            border-radius: 10px;
+            animation-name: ball;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count: 1;/*애니메이션 반복 횟수를 설정한다*/
+            animation-fill-mode: backwards;/*애니메이션이 끝난 후 시작점으로 돌아간다 0 -> 0 -> 100 -> 처음스타일*/
+        }
+
+        @keyframes ball {
+            0% {
+                background-color: yellow;
+                color: #0000e4;
+            }
+
+            100% {
+                background-color: blue;
+                color: #eee6ff;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        ball
+    </div>
+</body>
+</html>
