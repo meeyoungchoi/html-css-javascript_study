@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #f2b441;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            background-color: #f2d541;
+        }
+
+        .box2 {
+            background-color: #5fd6d9;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .box3 {
+            background-color: #d90404;
+            position: absolute;   
+            /*질문 absolute를 주석으로 막았을때 두개가 겹치게 되는 이유?
+            box2 안에 넣었기 떄문인가?*/
+            /* 부모요소인 relative가 없으면 body를 기준으로 한다 */
+            top: 50px;
+            left: 50px;
+        }
+
+        .box4 {
+            background-color: #3b9cd9;
+            position: fixed;
+            top: 50px;
+            left: 400px;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+    
+    <div class="box4"></div>
+</body>
+</html>

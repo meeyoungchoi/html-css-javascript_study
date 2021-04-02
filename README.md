@@ -36,3 +36,10 @@
 + position - relative , absolute , fixed
 + animation - animation-name , animatino-duration , animation-fill-mode , animation-iteration-count 
 + transition - transition-timing-function , transition-duration
+
+
+
+## 0402 정리
++ float - 정렬 , clear
++ transform - x축 , y축 , z축
++ position - absolute , relative , fixed, overflow
