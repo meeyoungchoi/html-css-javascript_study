@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                border: 2px solid #f2b441;
+                border-radius: 10px;
+                transition-property: width;
+                transition-duration: 5s;
+            }
+
+            .box1 {
+                background-color: #f2d541;
+                /*transition:  한가지 상태에서 다른 상태로 변화하는 것*/
+                transition-timing-function: ease;
+                /*처음에 천천히 시작하여 빨라지다 마지막에 느려진다*/
+            }
+
+            .box2 {
+                background-color: #5fb69d;
+                transition-timing-function: linear;
+                /*애니메이션의 변화 속도가 청므부터 끝까지 동일하다*/
+            }
+
+            .box3 {
+                background-color: #d90404;
+                transition-timing-function: ease-in;
+                /*천천히 시작하여 마지막에 속도를 높여 끝낸다*/
+            }
+
+
+            .box4 {
+                background-color: #3d9cd9;
+                transition-timing-function: ease-in-out;
+                /*천천히 시작되어 정상 속도가 되었다가 마지막에 느려진다*/
+            }
+
+
+            .box5 {
+                background-color: #3b9cd9;
+                transition-timing-function: step-start;
+                /*steps : 애니메이션을 스텝에 맞게 끊어서 표현해준다*/
+            }
+
+
+            .box6 {
+                background-color: #3b9cd9;
+                transition-timing-function: step-end;
+                /*끝나는 시점에 스텝을 끊어준다
+                참고 - https://apes0113.postype.com/post/2620
+                질문 스텝이 끊어졌기 때문에 움직임이 없는것인가?*/
+            }
+
+            .box7 {
+                background-color: #3b9cd9;
+                transition-timing-function: steps(4 , start);
+            }
+
+
+            div:hover {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 참고 - https://velog.io/@cada/CSS-Transition-%EC%86%8D%EC%84%B1%EC%97%90%EC%84%9C-transition-timing-function-%EA%B0%92%EC%97%90-%EB%94%B0%EB%A5%B8-%EC%B0%A8%EC%9D%B4-->
+        <div class="box1">ease</div>
+        <div class="box2">linear</div>
+        <div class="box3">ease-in</div>
+        <div class="box4">ease-in-out</div>
+        <div class="box5">step-start</div>
+        <div class="box6">step-end</div>
+        <div class="box7">steps(4, start)</div>
+
+    </body>
+</html>
