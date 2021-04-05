@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: orangered;
+        }
+
+        h1 {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- span 태그가 p태그에 적용된 style을 상속 받았기 때문에 span 태그에도 orangered style이 적용되는 것을 확인할수 있다-->
+    <p>p태그 안에 <span>span 태그를</span>넣었다</p>
+    <h1>p태그안에 <spand>span 태그를</spand>넣었다</h1>
+    <!-- h1 태그안에 있는 span태그에는 border가 적용되지 않았다
+    왜냐하면 h1 태그에 있는 span태그는 h1 태그 style 속성을 상속받지 않았기 때문이다-->
+
+
+
+
+
+
+
+</body>
+</html>

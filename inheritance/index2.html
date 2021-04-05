@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: orangered;
+        }
+
+        h1 {
+            border: 1px solid orangered;
+        }
+
+        span {
+            border: inherit;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- p태그안에 있는 span 태근는 p태그에 적용된 style을 상속받는다-->
+    <p>p 태그 안에 <span>span 태그를</span>넣었다</p>
+    <!-- h1태그 안에 있는 span 태그는 h1 스타일 속성을 상속받지 않았다-->
+    <!-- h1 태그 안에 있는 span 태그가 border 속성을 
+    상속 받을수 있게 border에 inherit을 적용했다-->
+    <h1>p 태그 안에 <span>span 태그를</span>넣었다</h1>
+</body>
+</html>
