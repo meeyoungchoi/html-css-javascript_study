@@ -43,3 +43,9 @@
 + float - 정렬 , clear
 + transform - x축 , y축 , z축
 + position - absolute , relative , fixed, overflow
+
+
+## 0408 정리
++ flex
++ flex-wrap
++ flex-reverse

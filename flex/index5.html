@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+             .container {
+                width: 400px;
+                border: 2px solid #f2e3d5;
+                background-color: #f20505;
+                display: flex;
+                /*내용이 넘쳐서 잘릴때만 스크롤바가 보인다*/
+                /* overflow: auto;  */
+                /* flex-wrap: wrap; */
+                /*flex가 적용된 아이템이 flex 안에서 표시되도록 줄바꿈 한다*/
+                flex-wrap: wrap-reverse;
+                /*줄바꿈 하여 표시되지만 역순으로 배치된다*/
+                /*참고 - https://www.tabmode.com/homepage/flex-wrap.html#gsc.tab=0*/
+
+            } 
+
+            .item {
+                border: 2px solid #f2e3d5;
+                margin: 10px;
+                padding: 20px;
+                text-align: center;
+                line-height: 50px;
+                background-color: #03658c;
+                height: 50px;
+                border-radius: 10px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <div class="item">item4</div>
+            <div class="item">item5</div>
+        </div>
+
+    </body>
+</html>
